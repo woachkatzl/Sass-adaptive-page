@@ -1,0 +1,5 @@
+@use '../abstracts/index.scss' as a;
+
+.root {
+    background-color: a.$main-bg-color;
+}

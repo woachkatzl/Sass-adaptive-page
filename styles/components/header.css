@@ -1,0 +1,16 @@
+@media screen and (max-width: 360px) {
+  .header__name1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    color: #333333;
+  }
+  .header__name2 {
+    font-family: "Caveat", cursive;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    color: #0EB80E;
+  }
+}/*# sourceMappingURL=header.css.map */

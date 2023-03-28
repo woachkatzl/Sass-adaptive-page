@@ -1,0 +1,18 @@
+@use '../abstracts/index.scss';
+
+
+@mixin title-txt ($font-size, $align) {
+    font-family: index.$lg-txt;
+    font-size: $font-size;
+    font-weight: 300;
+    text-align: $align;
+    color: #333333;
+}
+
+@mixin cursive ($font-size, $align) {
+    font-family: index.$cursive-txt;
+    font-size: $font-size;
+    font-weight: 400;
+    text-align: $align;
+    color: #0EB80E;
+}

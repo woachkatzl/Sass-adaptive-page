@@ -1,0 +1,14 @@
+@use '../abstracts/index.scss' as a;
+@use '../abstracts/mixins.scss' as *;
+
+
+@media screen and (max-width: 360px) {
+
+    .header__name1 {
+        @include title-txt (32px, center);
+    }
+
+    .header__name2 {
+        @include cursive (26px, center);
+    }
+}
