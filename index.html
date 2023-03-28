@@ -11,16 +11,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nunito:wght@300;400;500;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* .header__img-box {
+            border: 1px solid red;
+        } */
+    </style>
 </head>
 <body>
     <div class="root">
-        <header class="header">
+        <header class="header root__section">
             <div class="header__info">
-                <img src="images/logo.svg" alt="Логотип">
-                <a class="header__call-rec" href="#">
+                <a class="header__home" href="index.html">
+                    <img src="images/logo.svg" alt="Логотип">
+                </a>
+                <a class="header__call-req" href="#">
                     <img src="images/phone.svg" alt="Заказать звонок">
                 </a>
-                <img src="images/burger.svg" alt="Меню" class="header__burger">
+                <div class="header__menu">
+                    <img class="header__burger" src="images/burger.svg" alt="Меню">
+                </div>
             </div>
             <div class="header__graphic">
                 <div class="header__name">
@@ -28,7 +37,9 @@
                     <p class="header__name2">с детским церебральным
                     параличом</p>
                 </div>
-                <img src="images/intro.svg" alt="Изображение">
+                <div class="header__img-box">
+                    <img class="header__img" src="images/intro.svg" alt="Изображение">
+                </div>
             </div>
         </header>
     </div>

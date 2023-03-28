@@ -3,3 +3,14 @@
 .root {
     background-color: a.$main-bg-color;
 }
+
+.root__section {
+    min-width: 300px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}

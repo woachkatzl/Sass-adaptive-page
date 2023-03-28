@@ -2,7 +2,18 @@
 @use '../abstracts/mixins.scss' as *;
 
 
-@media screen and (max-width: 360px) {
+//Mobile version
+@media screen and (max-width: 720px) {
+
+    .header__info {
+        display: grid;
+        grid-template: 75px / 1fr 66px 40px;
+        align-items: center;
+    }
+
+    .header__home {
+        margin-left: 10px;
+    }
 
     .header__name1 {
         @include title-txt (32px, center);
@@ -10,5 +21,23 @@
 
     .header__name2 {
         @include cursive (26px, center);
+    }
+
+    .header__graphic {
+        display: flex;
+        flex-direction: column;
+        background-image: url(../images/intro-bg.svg);
+        background-repeat: no-repeat;
+        background-position: 103% 80px;
+    }
+
+    .header__img-box {
+        align-self: flex-end;
+        max-width: 350px;
+    }
+
+    .header__img {
+        min-width: 100%;
+        max-width: 100%;
     }
 }

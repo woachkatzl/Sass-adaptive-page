@@ -2,7 +2,28 @@
   background-color: #F4FAFA;
 }
 
-@media screen and (max-width: 360px) {
+.root__section {
+  min-width: 300px;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 720px) {
+  .header__info {
+    display: grid;
+    grid-template: 75px/1fr 66px 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__home {
+    margin-left: 10px;
+  }
   .header__name1 {
     font-family: "Raleway", sans-serif;
     font-size: 32px;
@@ -16,5 +37,26 @@
     font-weight: 400;
     text-align: center;
     color: #0EB80E;
+  }
+  .header__graphic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: url(../images/intro-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 103% 80px;
+  }
+  .header__img-box {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    max-width: 350px;
+  }
+  .header__img {
+    min-width: 100%;
+    max-width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */
