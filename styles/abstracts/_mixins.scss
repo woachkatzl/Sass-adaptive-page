@@ -1,12 +1,12 @@
 @use '../abstracts/index.scss';
 
-
+//Mixins for texts
 @mixin title-txt ($font-size, $align) {
     font-family: index.$lg-txt;
     font-size: $font-size;
     font-weight: 300;
     text-align: $align;
-    color: #333333;
+    color: index.$main-txt-color;
 }
 
 @mixin cursive ($font-size, $align) {
@@ -14,5 +14,43 @@
     font-size: $font-size;
     font-weight: 400;
     text-align: $align;
-    color: #0EB80E;
+    color: index.$main-hlt-color;
+}
+
+@mixin med-txt ($font-size, $align) {
+    font-family: index.$lg-txt;
+    font-size: $font-size;
+    font-weight: 500;
+    text-align: $align;
+    color: index.$main-txt-color;
+}
+
+@mixin form-txt ($font-size, $align) {
+    font-family: index.$main-txt;
+    font-size: $font-size;
+    font-weight: 400;
+    text-align: $align;
+    color: index.$light-txt-color;
+}
+
+@mixin grn-btn-txt ($font-size) {
+    font-family: index.$main-txt;
+    font-size: $font-size;
+    font-weight: 400;
+    text-align: center;
+    color: index.$btn-txt-color-1;
+    letter-spacing: 0.03em;
+}
+
+
+//Mixins for shapes
+@mixin input-box ($bd-color) {
+    border: 1px solid $bd-color;
+    border-radius: 15px;
+}
+
+//Mixins for positioning
+@mixin vert-flex {
+    display: flex;
+    flex-direction: column;
 }

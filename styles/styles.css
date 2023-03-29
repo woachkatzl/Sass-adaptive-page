@@ -59,4 +59,99 @@ a {
     min-width: 100%;
     max-width: 100%;
   }
+}
+@media screen and (max-width: 720px) {
+  .request {
+    position: relative;
+    bottom: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 94vw;
+    height: 421px;
+    margin-left: 3vw;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+  }
+  .request__form {
+    display: grid;
+    grid-template: 77px 83px 69px 1fr/[form-start] 21% 79% [form-end];
+    justify-items: center;
+  }
+  .request__tel,
+  .request__issue {
+    border: 1px solid #DFDFDE;
+    border-radius: 15px;
+  }
+  .request__tel,
+  .request__issue,
+  .request__btn {
+    grid-column-start: form-start;
+    grid-column-end: form-end;
+    width: 262px;
+    height: 57px;
+  }
+  .request__ck-bx {
+    justify-self: end;
+    width: 20px;
+    height: 20px;
+  }
+  .request__btn {
+    border: 1px solid #0EB80E;
+    border-radius: 15px;
+    background-color: #0EB80E;
+  }
+  .request__txt {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #333333;
+  }
+  .request__tel {
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #818888;
+    line-height: 25px;
+    letter-spacing: -0.01em;
+  }
+  .request__issue {
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: auto;
+    color: #818888;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+  }
+  .request__btn {
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 0.03em;
+  }
+  .request__consent-txt {
+    justify-self: start;
+    margin-left: 10px;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: auto;
+    color: #818888;
+    color: #333333;
+    opacity: 0.3;
+  }
+  .request__consent-txt--underline {
+    text-decoration: underline;
+  }
 }/*# sourceMappingURL=styles.css.map */

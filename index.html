@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nunito:wght@300;400;500;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        /* .header__img-box {
+        /* .request__form {
             border: 1px solid red;
         } */
     </style>
@@ -42,6 +42,28 @@
                 </div>
             </div>
         </header>
+        <main class="root__section">
+            <div class="request">
+                <p class="request__txt">Коррекция и восстановление современными методами,<br> не имеющими аналогов в Иркутске</p>
+                <form class="request__form" action="">
+                    <input class="request__tel" type="tel" placeholder="+7 ___ ___ __ __">
+                    <select class="request__issue" name="issue">
+                        <option class="request__option" selected>Укажите проблему</option>
+                        <option class="request__option" value="asd">Расстройство аутистического спектра (РАС)</option>
+                        <option class="request__option" value="adhd">Синдром дефицита внимания и/или гиперактивность (СДВГ)</option>
+                        <option class="request__option" value="autism">Аутизм</option>
+                        <option class="request__option" value="dcp">Детский церебральный паралич (ДЦП)</option>
+                        <option class="request__option" value="speach">Нарушение речи</option>
+                        <option class="request__option" value="depression">Депрессия</option>
+                        <option class="request__option" value="migraine">Мигрень</option>
+                        <option class="request__option" value="poststroke">Постинсультный синдром</option>
+                    </select>
+                    <button class="request__btn" type="submit">Отправить</button>
+                    <input class="request__ck-bx" type="checkbox" id="confidentiality" checked>
+                    <label class="request__consent-txt" for="confidentiality">Я согласен на обработку <span class="request__consent-txt--underline">персональных данных</span></label>
+                </form>
+            </div>
+        </main>
     </div>
 </body>
 </html>

@@ -1,0 +1,82 @@
+@use '../abstracts/index.scss' as a;
+@use '../abstracts/mixins.scss' as *;
+
+
+//Mobile version
+@media screen and (max-width: 720px) {
+
+    .request {
+        position: relative;
+        bottom: 45px;
+        @include vert-flex;
+        justify-content: space-around;
+        width: 94vw;
+        height: 421px;
+        margin-left: 3vw;
+        background-color: a.$light-bg-color;
+        border-radius: 20px;
+    }
+
+    .request__form {
+        display: grid;
+        grid-template: 77px 83px 69px 1fr / [form-start] 21% 79% [form-end];
+        justify-items: center;
+    }
+
+    .request__tel,
+    .request__issue {
+        @include input-box (a.$border-color-1);
+    }
+
+    .request__tel,
+    .request__issue,
+    .request__btn {
+        grid-column-start: form-start;
+        grid-column-end: form-end;
+        width: 262px;
+        height: 57px;
+    }
+
+    .request__ck-bx {
+        justify-self: end;
+        width: 20px;
+        height: 20px;
+    }
+
+    .request__btn {
+        @include input-box (a.$main-hlt-color);
+        background-color: a.$main-hlt-color;
+    }
+
+    .request__txt {
+        @include med-txt (16px, center);
+    }
+
+    .request__tel {
+        @include form-txt (18px, center);
+        line-height: 25px;
+        letter-spacing: -0.01em;
+    }
+
+    .request__issue {
+        @include form-txt (18px, auto);
+        line-height: 25px;
+        letter-spacing: 0.03em;
+    }
+
+    .request__btn {
+        @include grn-btn-txt (20px);
+    }
+
+    .request__consent-txt {
+        justify-self: start;
+        margin-left: 10px;
+        @include form-txt (14px, auto);
+        color: a.$main-txt-color;
+        opacity: 0.3;
+    }
+
+    .request__consent-txt--underline {
+        text-decoration: underline;
+    }
+}
