@@ -1,0 +1,134 @@
+@use '../abstracts/index.scss' as a;
+@use '../abstracts/mixins.scss' as *;
+
+
+//Mobile version
+
+
+@media screen and (max-width: 720px) {
+
+    .appt {
+        border-radius: 40px;
+        background-color: a.$dark-bg-color;
+        padding-bottom: 150px;
+    }
+
+    .appt__cta {
+        position: relative;
+        width: 94vw;
+        height: 350px;
+        margin-left: 3vw;
+        border: 1px solid rgba(255, 0, 0, 0);
+    }
+
+    .appt__ad {
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+        width: 290px;
+        height: 290px;
+    }
+
+    .appt__result {
+        position: relative;
+        width: 94vw;
+        margin-left: 3vw;
+    }
+
+    .appt__img-box {
+        position: absolute;
+        right: 3vw;
+        top: -60px;
+        width: 135px;
+        height: 284px;
+    }
+
+    .appt__img {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .appt__form {
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .appt__question {
+        margin-top: 70px;
+        @include main-hlt-txt (1em, 400);
+        text-transform: uppercase;
+        opacity: 0.7;
+    }
+
+    .form__txt--align {
+        width: 262px;
+        text-align: left;
+    }
+
+    .appt__title-txt {
+        @include large-txt (1.375em, 400);
+    }
+
+    .appt__title-txt--wrap {
+        width: 55vw;
+    }
+
+    ol.appt__txt {
+        padding-left: 20px;
+    }
+
+    .appt__txt li {
+        width: 60vw;
+    }
+
+    .appt__card {
+        position: relative;
+        bottom: 50px;
+        width: 370px;
+        height: 295px;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+        background-image: url(../images/card.svg);
+        background-repeat: no-repeat;
+        background-size: initial;
+        background-position: -50px;
+    }
+
+    .appt__cta-ln2::before {
+        content: "\a";
+        white-space: pre;
+    }
+
+    .appt__txt {
+        @include main-txt (1em, 400);
+        line-height: 1.75em;
+        color: a.$main-txt-color;
+        opacity: 0.7;
+    }
+
+    .appt__card-txt {
+        align-self: end;
+        @include large-txt (1em, 500);
+        color: a.$main-txt-color;
+        transform: rotate(-7.47deg);
+        text-align: center;
+        letter-spacing: 0.02em;
+    }
+
+    .appt__card-btn {
+        display: block;
+        box-sizing: border-box;
+        margin-top: 30px;
+        width: 250px;
+        height: 57px;
+        @include input-box (a.$other-hlt-color);
+        padding: 15px 24px;
+        transform: rotate(-8deg);
+        @include main-txt (20px, 400);
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: a.$btn-txt-color-1;
+        background-color: a.$other-hlt-color;
+    }
+}

@@ -1,11 +1,10 @@
 @use '../abstracts/index.scss';
 
 //Mixins for texts
-@mixin title-txt ($font-size, $align) {
+@mixin large-txt ($font-size, $font-weight) {
     font-family: index.$lg-txt;
     font-size: $font-size;
-    font-weight: 300;
-    text-align: $align;
+    font-weight: $font-weight;
     color: index.$main-txt-color;
 }
 
@@ -15,14 +14,6 @@
     font-weight: 400;
     text-align: $align;
     color: index.$main-hlt-color;
-}
-
-@mixin med-txt ($font-size, $align) {
-    font-family: index.$lg-txt;
-    font-size: $font-size;
-    font-weight: 500;
-    text-align: $align;
-    color: index.$main-txt-color;
 }
 
 @mixin form-txt ($font-size, $align) {
@@ -42,6 +33,27 @@
     letter-spacing: 0.03em;
 }
 
+@mixin main-hlt-txt ($font-size, $font-weight) {
+    font-family: index.$main-txt;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: index.$main-hlt-color;
+}
+
+@mixin main-txt ($font-size, $font-weight) {
+    font-family: index.$main-txt;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+
+//Mixins for positioning
+
+@mixin vert-flex {
+    display: flex;
+    flex-direction: column;
+}
+
 
 //Mixins for shapes
 @mixin input-box ($bd-color) {
@@ -49,8 +61,11 @@
     border-radius: 15px;
 }
 
-//Mixins for positioning
-@mixin vert-flex {
-    display: flex;
-    flex-direction: column;
+@mixin contact-form {
+    @include vert-flex;
+    justify-content: space-around;
+    width: 94vw;
+    margin-left: 3vw;
+    background-color: index.$light-bg-color;
+    border-radius: 20px;
 }

@@ -16,7 +16,8 @@
     }
 
     .header__name1 {
-        @include title-txt (32px, center);
+        @include large-txt (32px, 300);
+        text-align: center;
     }
 
     .header__name2 {

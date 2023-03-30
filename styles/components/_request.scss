@@ -5,70 +5,72 @@
 //Mobile version
 @media screen and (max-width: 720px) {
 
-    .request {
-        position: relative;
-        bottom: 45px;
-        @include vert-flex;
-        justify-content: space-around;
-        width: 94vw;
-        height: 421px;
-        margin-left: 3vw;
-        background-color: a.$light-bg-color;
-        border-radius: 20px;
+    .form {
+        @include contact-form;
     }
 
     .request__form {
+        position: relative;
+        bottom: 45px;
+        height: 421px;
+    }
+
+    .form__input {
         display: grid;
-        grid-template: 77px 83px 69px 1fr / [form-start] 21% 79% [form-end];
+        grid-template: 77px 83px 79px 1fr / [form-start] 21% 79% [form-end];
         justify-items: center;
     }
 
-    .request__tel,
-    .request__issue {
+    .form__tel,
+    .form__issue {
         @include input-box (a.$border-color-1);
     }
 
-    .request__tel,
-    .request__issue,
-    .request__btn {
+    .form__tel,
+    .form__issue,
+    .form__btn {
         grid-column-start: form-start;
         grid-column-end: form-end;
         width: 262px;
         height: 57px;
     }
 
-    .request__ck-bx {
+    .form__ck-bx {
         justify-self: end;
         width: 20px;
         height: 20px;
     }
 
-    .request__btn {
+    .form__btn {
         @include input-box (a.$main-hlt-color);
         background-color: a.$main-hlt-color;
     }
 
-    .request__txt {
-        @include med-txt (16px, center);
+    .form__txt {
+        @include large-txt (16px, 500);
     }
 
-    .request__tel {
+    .form__txt--center {
+        text-align: center
+    }
+
+    .form__tel {
         @include form-txt (18px, center);
         line-height: 25px;
         letter-spacing: -0.01em;
     }
 
-    .request__issue {
+    .form__issue {
         @include form-txt (18px, auto);
         line-height: 25px;
         letter-spacing: 0.03em;
     }
 
-    .request__btn {
+    .form__btn {
         @include grn-btn-txt (20px);
     }
 
-    .request__consent-txt {
+    .form__consent {
         justify-self: start;
         margin-left: 10px;
         @include form-txt (14px, auto);
@@ -76,7 +78,7 @@
         opacity: 0.3;
     }
 
-    .request__consent-txt--underline {
+    .form__consent--underline {
         text-decoration: underline;
     }
 }
