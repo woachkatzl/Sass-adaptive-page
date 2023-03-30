@@ -378,4 +378,15 @@ a {
     letter-spacing: 0.03em;
     opacity: 0.5;
   }
+}
+@media screen and (max-width: 720px) {
+  .copyright__txt {
+    margin-top: 40px;
+    font-family: "Nunito", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5em;
+    color: #333333;
+  }
 }/*# sourceMappingURL=styles.css.map */

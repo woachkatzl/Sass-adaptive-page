@@ -1,0 +1,17 @@
+@use '../abstracts/index.scss' as a;
+@use '../abstracts/mixins.scss' as *;
+
+
+//Mobile version
+
+
+@media screen and (max-width: 720px) {
+
+    .copyright__txt {
+        margin-top: 40px;
+        @include main-txt (1em, 400);
+        text-align: center;
+        line-height: 1.5em;
+        color: a.$main-txt-color;
+    }
+}
