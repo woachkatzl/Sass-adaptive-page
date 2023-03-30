@@ -81,20 +81,6 @@
         width: 60vw;
     }
 
-    .appt__card {
-        position: relative;
-        bottom: 50px;
-        width: 370px;
-        height: 295px;
-        display: grid;
-        grid-template-rows: 50% 50%;
-        justify-items: center;
-        background-image: url(../images/card.svg);
-        background-repeat: no-repeat;
-        background-size: initial;
-        background-position: -50px;
-    }
-
     .appt__cta-ln2::before {
         content: "\a";
         white-space: pre;
@@ -105,30 +91,5 @@
         line-height: 1.75em;
         color: a.$main-txt-color;
         opacity: 0.7;
-    }
-
-    .appt__card-txt {
-        align-self: end;
-        @include large-txt (1em, 500);
-        color: a.$main-txt-color;
-        transform: rotate(-7.47deg);
-        text-align: center;
-        letter-spacing: 0.02em;
-    }
-
-    .appt__card-btn {
-        display: block;
-        box-sizing: border-box;
-        margin-top: 30px;
-        width: 250px;
-        height: 57px;
-        @include input-box (a.$other-hlt-color);
-        padding: 15px 24px;
-        transform: rotate(-8deg);
-        @include main-txt (20px, 400);
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: a.$btn-txt-color-1;
-        background-color: a.$other-hlt-color;
     }
 }
