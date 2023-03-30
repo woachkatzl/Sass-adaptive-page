@@ -1,0 +1,84 @@
+@use '../abstracts/index.scss' as a;
+@use '../abstracts/mixins.scss' as *;
+
+
+//Mobile version
+
+
+@media screen and (max-width: 720px) {
+    .footer {
+        position: relative;
+        height: 652px;
+        border: 1px solid a.$border-color-2;
+        border-radius: 80px;
+    }
+
+    .footer__bg {
+        position: absolute;
+        top: 6px;
+        left: 8px;
+        width: 100vw;
+        height: 100%;
+        background-color: a.$main-hlt-color;
+        border-radius: 80px;
+    }
+
+    .footer__content {
+        position: relative;
+        display: grid;
+        grid-template-rows: repeat (10, auto);
+        justify-items: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .footer__logo {
+        width: 239px;
+        height: 56px;
+        margin-top: 36px;
+        margin-bottom: 15px;
+    }
+
+    .footer__img {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .footer__social {
+        display: flex;
+    }
+
+    .footer__social-link {
+        width: 44px;
+        height: 44px;
+        margin: 6px;
+    }
+
+    .footer__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 73vw;
+        height: 81px;
+        margin-bottom: 38px;
+        border-radius: 20px;
+        @include main-txt (1.875em, 400);
+        color: a.$main-hlt-color;
+        background-color: a.$light-bg-color;
+    }
+
+    .footer__txt {
+        @include main-txt (1.25em, 500);
+        text-align: center;
+        line-height: 135%;
+        color: a.$xtra-light-txt-color;
+    }
+
+    .footer__link {
+        @include main-txt (0.9375em, 400);
+        line-height: 150%;
+        color: a.$xtra-light-txt-color;
+        letter-spacing: 0.03em;
+        opacity: 0.5;
+    }
+}
