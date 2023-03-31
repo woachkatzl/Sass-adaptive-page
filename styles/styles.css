@@ -14,6 +14,11 @@ a {
   text-decoration: none;
 }
 
+.header__img {
+  min-width: 100%;
+  max-width: 100%;
+}
+
 @media screen and (max-width: 720px) {
   .header__info {
     display: grid;
@@ -24,17 +29,27 @@ a {
   }
   .header__home {
     margin-left: 10px;
+    width: 133px;
+    height: 43px;
+  }
+  .header__tel,
+  .header__call-btn--dsk {
+    display: none;
+  }
+  .header__call-btn {
+    width: 43px;
+    height: 43px;
   }
   .header__name1 {
     font-family: "Raleway", sans-serif;
-    font-size: 32px;
+    font-size: 2em;
     font-weight: 300;
     color: #333333;
     text-align: center;
   }
   .header__name2 {
     font-family: "Caveat", cursive;
-    font-size: 26px;
+    font-size: 1.625em;
     font-weight: 400;
     text-align: center;
     color: #0EB80E;
@@ -56,9 +71,79 @@ a {
         align-self: flex-end;
     max-width: 350px;
   }
-  .header__img {
-    min-width: 100%;
-    max-width: 100%;
+}
+@media screen and (min-width: 721px) and (max-width: 960px) {
+  .header {
+    background-image: url(../images/intro-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 86% 10px;
+  }
+  .header__info {
+    display: grid;
+    grid-template: 75px/1fr 150px 181px 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__home {
+    margin-left: 10px;
+    width: 133px;
+    height: 43px;
+  }
+  .header__tel {
+    font-family: "Nunito", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #333333;
+    letter-spacing: 0.01em;
+  }
+  .header__call-btn--mbl {
+    display: none;
+  }
+  .header__call-btn--dsk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 164px;
+    height: 37px;
+    border: 1px solid #DFDFDE;
+    border-radius: 10px;
+    font-family: "Nunito", sans-serif;
+    font-size: 0.875em;
+    font-weight: 400;
+    color: #0EB80E;
+  }
+  .header__graphic {
+    position: relative;
+    height: 380px;
+  }
+  .header__img-box {
+    position: absolute;
+    right: 59px;
+    top: 40px;
+  }
+  .header__name {
+    padding-top: 20px;
+  }
+  .header__name1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 2.5em;
+    font-weight: 300;
+    color: #333333;
+    margin: 0;
+  }
+  .header__name2 {
+    font-family: "Caveat", cursive;
+    font-size: 1.625em;
+    font-weight: 400;
+    text-align: auto;
+    color: #0EB80E;
   }
 }
 @media screen and (max-width: 720px) {
