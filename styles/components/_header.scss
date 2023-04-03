@@ -47,12 +47,13 @@
         flex-direction: column;
         background-image: url(../images/intro-bg.svg);
         background-repeat: no-repeat;
-        background-position: 103% 80px;
+        background-position: 100% 70px;
     }
 
     .header__img-box {
         align-self: flex-end;
-        max-width: 350px;
+        width: 390px;
+        margin-right: 3px;
     }
 }
 
@@ -62,7 +63,7 @@
     .header {
         background-image: url(../images/intro-bg.svg);
         background-repeat: no-repeat;
-        background-position: 86% 10px;
+        background-position: 100% 0;
     }
 
     .header__info {
@@ -118,11 +119,13 @@
 
     .header__img-box {
         position: absolute;
-        right: 59px;
-        top: 40px;
+        right: -4px;
+        top: 45px;
+        width: 400px;
     }
 
     .header__name {
+        margin-left: 10px;
         padding-top: 20px;
     }
 
