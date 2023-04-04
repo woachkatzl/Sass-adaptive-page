@@ -50,6 +50,7 @@
 
     .form__txt {
         @include large-txt (1em, 500);
+        line-height: 1.5em;
     }
 
     .form__txt--center {
@@ -149,6 +150,7 @@
     .form__txt {
         margin-top: 40px;
         @include large-txt (1.125em, 500);
+        line-height: 1.5em;
     }
 
     .form__tel {
