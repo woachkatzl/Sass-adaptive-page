@@ -29,7 +29,9 @@
     }
 
     .header__tel,
-    .header__call-btn--dsk {
+    .header__call-btn--dsk,
+    .header__nav,
+    .header__social {
         display: none;
     }
 
@@ -83,14 +85,16 @@
         height: 43px;
     }
 
+    .header__nav,
+    .header__call-btn--mbl,
+    .header__social {
+        display: none;
+    }
+
     .header__tel {
         @include main-txt (1em, 400);
         color: a.$main-txt-color;
         letter-spacing: 0.01em;
-    }
-
-    .header__call-btn--mbl {
-        display: none;
     }
 
     .header__call-btn--dsk {
@@ -134,7 +138,7 @@
 
 
 //Desktop version
-@media screen and (min-width: 961px) and (max-width: 1919px) {
+@media screen and (min-width: 961px) and (max-width: 1900px) {
 
     .header {
         background-image: url(../images/intro-bg.svg);
@@ -155,14 +159,16 @@
         height: 73px;
     }
 
+    .header__nav,
+    .header__call-btn--mbl,
+    .header__social {
+        display: none;
+    }
+
     .header__tel {
         @include main-txt (1em, 400);
         color: a.$main-txt-color;
         letter-spacing: 0.01em;
-    }
-
-    .header__call-btn--mbl {
-        display: none;
     }
 
     .header__call-btn--dsk {
@@ -201,5 +207,103 @@
 
     .header__name2 {
         @include cursive (2.25em, auto);
+    }
+}
+
+
+//Wide-screen version
+@media screen and (min-width: 1900px) {
+
+    .header {
+        background-image: url(../images/intro-bg-wide.svg);
+        background-repeat: no-repeat;
+        background-position: 100% 125px;
+    }
+
+    .header__info {
+        display: grid;
+        grid-template: 75px / 310px 1fr 150px 177px 191px;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .header__call-btn--mbl,
+    .header__menu {
+        display: none;
+    }
+
+    .header__home {
+        margin-left: 60px;
+        width: 246px;
+        height: 73px;
+    }
+
+    .header__nav {
+        justify-self: center;
+        display: flex;
+        justify-content: space-between;
+        width: 31vw;
+    }
+
+    .header__tel {
+        @include main-txt (1em, 400);
+        color: a.$main-txt-color;
+        letter-spacing: 0.01em;
+    }
+
+    .header__call-btn--dsk {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 164px;
+        height: 37px;
+        border: 1px solid a.$border-color-1;
+        border-radius: 10px;
+        @include main-txt (0.875em, 400);
+        color: a.$main-hlt-color;
+    }
+
+    .header__social {
+        display: flex;
+    }
+
+    .header__social-link {
+        width: 37px;
+        height: 37px;
+        margin-right: 10px;
+    }
+
+    .header__name {
+        margin-left: 10vw;
+        padding-top: 140px;
+    }
+
+    .header__name1 {
+        @include large-txt (3.75em, 300);
+        margin: 0;
+    }
+
+    .header__name2 {
+        margin: 0;
+        @include cursive (2.5em, auto);
+        line-height: 2.5em;
+        letter-spacing: 0.03em;
+    }
+
+    .header__link {
+        @include main-txt (0.9375em, 400);
+        color: a.$main-txt-color;
+    }
+
+    .header__graphic {
+        position: relative;
+        height: 678px;
+    }
+
+    .header__img-box {
+        position: absolute;
+        top: 130px;
+        right: 358px;
+        width: 583px;
     }
 }
