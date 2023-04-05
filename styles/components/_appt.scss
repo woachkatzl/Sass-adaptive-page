@@ -175,3 +175,89 @@
         opacity: 0.7;
     }
 }
+
+
+//Desktop version
+@media screen and (min-width: 961px) and (max-width: 1919px) {
+
+    .appt {
+        border-radius: 40px;
+        background-color: a.$dark-bg-color;
+        padding-bottom: 160px;
+    }
+
+    .appt__cta {
+        position: relative;
+        width: 94vw;
+        height: 260px;
+        margin-left: 3vw;
+        border: 1px solid rgba(255, 0, 0, 0);
+    }
+
+    .appt__ad {
+        position: absolute;
+        top: 30px;
+        right: -30px;
+        width: 290px;
+        height: 290px;
+    }
+
+    .appt__result {
+        position: relative;
+        width: 94vw;
+        margin-left: 3vw;
+    }
+
+    .appt__img-box {
+        position: absolute;
+        //right: 14vw;
+        left: 60vw;
+        top: -75px;
+        width: 207px;
+        height: 435px;
+    }
+
+    .appt__form {
+        position: relative;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .appt__question {
+        margin-top: 50px;
+        @include main-hlt-txt (1em, 400);
+        text-transform: uppercase;
+        opacity: 0.7;
+    }
+
+    .form__txt--align {
+        text-align: left;
+        white-space: pre;
+    }
+
+    .appt__title-txt {
+        @include large-txt (1.875em, 400);
+    }
+
+    .appt__title-txt--wrap {
+        width: 55vw;
+        margin-top: 40px;
+        font-size: 1.375em;
+    }
+
+    ol.appt__txt {
+        padding-left: 20px;
+    }
+
+    .appt__txt li {
+        width: 50vw;
+    }
+
+    .appt__txt {
+        width: 70vw;
+        @include main-txt (1.125em, 400);
+        line-height: 1.875em;
+        color: a.$main-txt-color;
+        opacity: 0.7;
+    }
+}

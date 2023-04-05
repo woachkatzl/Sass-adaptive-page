@@ -176,3 +176,98 @@
         text-decoration: underline;
     }
 }
+
+
+//Desktop version
+@media screen and (min-width: 961px) and (max-width: 1919px) {
+
+    .form {
+        @include contact-form;
+        align-items: center;
+    }
+
+    .request__form {
+        position: relative;
+        bottom: 50px;
+        height: 255px;
+    }
+
+    .form__input {
+        display: grid;
+        grid-template: 80px 50px / [phone-start] 30px [consent-start] 1fr [phone-end] 39vw 19vw [consent-end];
+    }
+
+    .form__tel {
+        grid-column-start: phone-start;
+        grid-column-end: phone-end;
+    }
+
+    .form__consent {
+        grid-column-start: consent-start;
+        grid-column-end: consent-end;
+    }
+
+    .form__txt,
+    .form__input {
+        width: 86vw;
+    }
+
+    .form__tel,
+    .form__issue,
+    .form__btn {
+        height: 57px;
+    }
+
+    .form__tel {
+        width: 89%;
+    }
+
+    .form__issue {
+        width: 92%;
+    }
+
+    .form__tel,
+    .form__issue {
+        @include input-box (a.$border-color-1);
+    }
+
+    .form__btn {
+        @include input-box (a.$main-hlt-color);
+        @include grn-btn-txt (1.25em);
+        background-color: a.$main-hlt-color;
+    }
+
+    .form__ck-bx {
+        width: 20px;
+        height: 20px;
+    }
+
+    .form__txt {
+        margin-top: 40px;
+        @include large-txt (1.125em, 500);
+        line-height: 1.5em;
+    }
+
+    .form__tel {
+        @include form-txt (1.125em, center);
+        line-height: 1.5625em;
+        letter-spacing: 0.05em;
+    }
+
+    .form__issue {
+        @include form-txt (1.125em, auto);
+        line-height: 1.5625em;
+        letter-spacing: 0.03em;
+    }
+
+    .form__consent {
+        @include form-txt (0.875em, auto);
+        color: a.$main-txt-color;
+        line-height: 1.25em;
+        opacity: 0.3;
+    }
+
+    .form__consent--underline {
+        text-decoration: underline;
+    }
+}

@@ -24,11 +24,37 @@
 
 //Tablet version
 @media screen and (min-width: 721px) and (max-width: 960px) {
+
     .copyright__txt {
         margin-top: 40px;
         @include main-txt (1em, 400);
         text-align: center;
         line-height: 1.5em;
         color: a.$main-txt-color;
+    }
+}
+
+
+//Desktop version
+@media screen and (min-width: 961px) and (max-width: 1919px) {
+
+    .copyright {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .copyright__txt {
+        margin: 40px 12px;
+        @include main-txt (1em, 400);
+        line-height: 1.5em;
+        color: a.$main-txt-color;
+    }
+
+    .copyright__txt--rgt {
+        margin-left: 10vw;
+    }
+
+    .copyright__txt--center {
+        justify-self: center;
     }
 }
