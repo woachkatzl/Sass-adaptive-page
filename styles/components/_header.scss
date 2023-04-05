@@ -7,6 +7,11 @@
     max-width: 100%;
 }
 
+.header__menu {
+    width: 30px;
+    height: 22px;
+}
+
 
 //Mobile version
 @media screen and (max-width: 720px) {
@@ -73,7 +78,7 @@
     }
 
     .header__home {
-        margin-left: 10px;
+        margin-left: 12px;
         width: 133px;
         height: 43px;
     }
@@ -83,18 +88,6 @@
         color: a.$main-txt-color;
         letter-spacing: 0.01em;
     }
-
-    // .header__call-btn {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     width: 164px;
-    //     height: 37px;
-    //     border: 1px solid a.$border-color-1;
-    //     border-radius: 10px;
-    //     @include main-txt (0.875em, 400);
-    //     color: a.$main-hlt-color;
-    // }
 
     .header__call-btn--mbl {
         display: none;
@@ -125,7 +118,7 @@
     }
 
     .header__name {
-        margin-left: 10px;
+        margin-left: 12px;
         padding-top: 20px;
     }
 
@@ -136,5 +129,77 @@
 
     .header__name2 {
         @include cursive (1.625em, auto);
+    }
+}
+
+
+//Desktop version
+@media screen and (min-width: 961px) and (max-width: 1919px) {
+
+    .header {
+        background-image: url(../images/intro-bg.svg);
+        background-repeat: no-repeat;
+        background-position: 100% 20px;
+    }
+
+    .header__info {
+        display: grid;
+        grid-template: 75px / 1fr 15% minmax(190px, 15%) 42px;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .header__home {
+        margin-left: 12px;
+        width: 246px;
+        height: 73px;
+    }
+
+    .header__tel {
+        @include main-txt (1em, 400);
+        color: a.$main-txt-color;
+        letter-spacing: 0.01em;
+    }
+
+    .header__call-btn--mbl {
+        display: none;
+    }
+
+    .header__call-btn--dsk {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 164px;
+        height: 37px;
+        border: 1px solid a.$border-color-1;
+        border-radius: 10px;
+        @include main-txt (0.875em, 400);
+        color: a.$main-hlt-color;
+    }
+
+    .header__graphic {
+        position: relative;
+        height: 380px;
+    }
+
+    .header__img-box {
+        position: absolute;
+        right: -4px;
+        top: 65px;
+        width: 400px;
+    }
+
+    .header__name {
+        margin-left: 12px;
+        padding-top: 50px;
+    }
+
+    .header__name1 {
+        @include large-txt (3.75em, 300);
+        margin: 0;
+    }
+
+    .header__name2 {
+        @include cursive (2.25em, auto);
     }
 }
