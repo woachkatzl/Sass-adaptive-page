@@ -12,8 +12,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nunito:wght@300;400;500;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        /* .test__card {
+        /* .form__input--vert {
             border: 1px solid red;
+            grid-template: 77px 83px 79px 50px / [form-start] 21% [consent-start] 79% [form-end];
+            justify-items: center;
+        }
+        .form__tel--vert,
+        .form__issue--vert,
+        .form__btn--vert {
+            grid-column-start: form-start;
+            grid-column-end: form-end;
+            width: 100%;
+        }
+        .form__ck-bx--vert {
+            grid-column-start: form-start;
+        }
+        .form__consent--vert {
+            grid-column-start: consent-start;
         } */
         /* .test {
             border: 1px solid blue;
@@ -69,9 +84,9 @@
         <main class="root__section">
             <form class="form request__form" action="mailto:sample@email.com" method="post" enctype="text/plain">
                 <p class="form__txt form__txt--center">Коррекция и восстановление современными методами,<br> не имеющими аналогов в Иркутске</p>
-                <div class="form__input">
-                    <input class="form__tel" type="tel" name="telephone" placeholder="+7 ___ ___ __ __">
-                    <select class="form__issue" name="issue">
+                <div class="form__input form__input--hrzn">
+                    <input class="form__tel form__tel--hrzn" type="tel" name="telephone" placeholder="+7 ___ ___ __ __">
+                    <select class="form__issue form__issue--hrzn" name="issue">
                         <option selected>Укажите проблему</option>
                         <option value="ASD">Расстройство аутистического спектра (РАС)</option>
                         <option value="ADHD">Синдром дефицита внимания и/или гиперактивность (СДВГ)</option>
@@ -88,6 +103,7 @@
                 </div>
             </form>
             <div class="appt">
+                <div class="appt__bg"></div>
                 <div class="appt__cta">
                     <div class="appt__ad">
                         <img class="appt__img" src="images/price.svg" alt="Цена">
@@ -99,9 +115,9 @@
                 <form class="form appt__form" action="mailto:sample@email.com" method="post" enctype="text/plain">
                     <p class="form__txt form__txt--align">Записаться на консультацию к
 неврологу со скидкой</p>
-                    <div class="form__input">
-                        <input class="form__tel" type="tel" name="telephone" placeholder="+7 ___ ___ __ __">
-                        <select class="form__issue" name="issue">
+                    <div class="form__input form__input--vert">
+                        <input class="form__tel form__tel--vert" type="tel" name="telephone" placeholder="+7 ___ ___ __ __">
+                        <select class="form__issue form__issue--vert" name="issue">
                             <option selected>Укажите проблему</option>
                             <option value="ASD">Расстройство аутистического спектра (РАС)</option>
                             <option value="ADHD">Синдром дефицита внимания и/или гиперактивность (СДВГ)</option>
@@ -112,9 +128,9 @@
                             <option value="Migraine">Мигрень</option>
                             <option value="Poststroke">Постинсультный синдром</option>
                         </select>
-                        <button class="form__btn" type="submit">Записаться</button>
-                        <input class="form__ck-bx" type="checkbox" id="confidentiality" checked>
-                        <label class="form__consent" for="confidentiality">Я согласен на обработку <span class="form__consent--underline">персональных данных</span></label>
+                        <button class="form__btn form__btn--vert" type="submit">Записаться</button>
+                        <input class="form__ck-bx form__ck-bx--vert" type="checkbox" id="confidentiality" checked>
+                        <label class="form__consent form__consent--vert" for="confidentiality">Я согласен на обработку <span class="form__consent--underline">персональных данных</span></label>
                     </div>
                 </form>
                 <div class="appt__result">

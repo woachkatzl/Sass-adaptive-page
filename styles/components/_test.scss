@@ -148,3 +148,52 @@
         background-color: a.$other-hlt-color;
     }
 }
+
+
+//Wide-screen version
+@media screen and (min-width: 1900px) {
+
+    .test {
+        height: 150px;
+    }
+
+    .test__card {
+        position: relative;
+        top: -270px;
+        left: 22vw;
+        width: 460px;
+        height: 295px;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+        background-image: url(../images/card.svg);
+        background-repeat: no-repeat;
+        background-size: initial;
+    }
+
+    .test__card-txt {
+        align-self: end;
+        @include large-txt (1em, 500);
+        color: a.$main-txt-color;
+        transform: rotate(-7.47deg);
+        text-align: center;
+        letter-spacing: 0.02em;
+        white-space: pre;
+    }
+
+    .test__card-btn {
+        display: block;
+        box-sizing: border-box;
+        margin-top: 30px;
+        width: 250px;
+        height: 57px;
+        @include input-box (a.$other-hlt-color);
+        padding: 15px 24px;
+        transform: rotate(-8deg);
+        @include main-txt (20px, 400);
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: a.$btn-txt-color-1;
+        background-color: a.$other-hlt-color;
+    }
+}

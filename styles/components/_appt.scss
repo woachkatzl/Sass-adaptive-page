@@ -210,7 +210,6 @@
 
     .appt__img-box {
         position: absolute;
-        //right: 14vw;
         left: 60vw;
         top: -75px;
         width: 207px;
@@ -259,5 +258,128 @@
         line-height: 1.875em;
         color: a.$main-txt-color;
         opacity: 0.7;
+    }
+}
+
+
+//Wide-screen version
+@media screen and (min-width: 1900px) {
+
+    .appt {
+        position: relative;
+        padding-bottom: 264px;
+    }
+
+    .appt__bg {
+        position: absolute;
+        width: 100%;
+        height: 810px;
+        border-radius: 80px;
+        transform: rotate(5deg);
+        background-color: a.$dark-bg-color;
+    }
+
+    .appt__cta,
+    .appt__result {
+        position: relative;
+        margin-left: 19vw;
+    }
+
+    .appt__cta {
+        border: 1px solid rgba(255, 0, 0, 0);
+    }
+
+    .appt__ad {
+        position: absolute;
+        top: 30px;
+        left: 40%;
+        width: 290px;
+        height: 290px;
+    }
+
+    .appt__img-box {
+        position: absolute;
+        left: 35%;
+        top: -220px;
+        width: 253px;
+        height: 531px;
+    }
+
+    .appt__form {
+        position: absolute;
+        top: 200px;
+        left: 60%;
+        align-items: center;
+        width: 382px;
+        height: 439px;
+        padding-bottom: 30px;
+    }
+
+    .form__input--vert {
+        grid-template: 77px 83px 79px 50px / [form-start] 21% [consent-start] 79% [form-end];
+        justify-items: center;
+    }
+
+    .form__tel--vert,
+    .form__issue--vert,
+    .form__btn--vert {
+        grid-column-start: form-start;
+        grid-column-end: form-end;
+        width: 100%;
+    }
+
+    .form__ck-bx--vert {
+        grid-column-start: form-start;
+    }
+
+    .form__consent--vert {
+        grid-column-start: consent-start;
+    }
+
+    .form__txt--align,
+    .form__input--vert {
+        width: 73%;
+    }
+
+    .appt__question {
+        margin-top: 130px;
+        @include main-hlt-txt (1.125em, 400);
+        text-transform: uppercase;
+        opacity: 0.7;
+    }
+
+    .form__txt--align {
+        text-align: left;
+        white-space: pre;
+    }
+
+    .appt__title-txt {
+        @include large-txt (2.375em, 400);
+    }
+
+    .appt__title-txt--wrap {
+        margin-top: 40px;
+        font-size: 1.375em;
+    }
+
+    ol.appt__txt {
+        padding-left: 20px;
+    }
+
+    .appt__txt li {
+        width: 528px;
+    }
+
+    .appt__txt {
+        width: 544px;
+        @include main-txt (1.125em, 400);
+        line-height: 1.875em;
+        color: a.$main-txt-color;
+        opacity: 0.7;
+    }
+
+    .appt__cta-ln2::before {
+        content: "\a";
+        white-space: pre;
     }
 }

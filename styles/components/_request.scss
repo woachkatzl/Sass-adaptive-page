@@ -294,10 +294,13 @@
 
     .form__input {
         display: grid;
+    }
+
+    .form__input--hrzn {
         grid-template: 80px 50px / [phone-start] 30px [consent-start] 1fr [phone-end] 39% 19% [consent-end];
     }
 
-    .form__tel {
+    .form__tel--hrzn {
         grid-column-start: phone-start;
         grid-column-end: phone-end;
     }
@@ -307,8 +310,8 @@
         grid-column-end: consent-end;
     }
 
-    .form__txt,
-    .form__input {
+    .form__txt--center,
+    .form__input--hrzn {
         width: 86%;
     }
 
@@ -318,11 +321,11 @@
         height: 57px;
     }
 
-    .form__tel {
+    .form__tel--hrzn {
         width: 89%;
     }
 
-    .form__issue {
+    .form__issue--hrzn {
         width: 92%;
     }
 
