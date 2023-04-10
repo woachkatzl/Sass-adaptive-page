@@ -1,6 +1,13 @@
 @use '../abstracts/index.scss' as a;
 @use '../abstracts/mixins.scss' as *;
 
+.form__btn:hover {
+    color: a.$main-hlt-color;
+    border: 1px solid a.$main-hlt-color;
+    background-color: a.$light-bg-color;
+    cursor: pointer;
+}
+
 
 //Mobile version
 @media screen and (max-width: 720px) {

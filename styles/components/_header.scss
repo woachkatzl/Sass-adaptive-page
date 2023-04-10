@@ -12,6 +12,21 @@
     height: 22px;
 }
 
+.header__tel:hover {
+    text-decoration: underline;
+}
+
+.header__call-btn--dsk:hover {
+    color: a.$btn-txt-color-1;
+    border: 1px solid a.$main-hlt-color;
+    background-color: a.$main-hlt-color;
+}
+
+.form__tel:focus,
+.form__issue:focus {
+    outline-color: a.$main-hlt-color;
+}
+
 
 //Mobile version
 @media screen and (max-width: 720px) {
@@ -35,7 +50,7 @@
         display: none;
     }
 
-    .header__call-btn {
+    .header__call-btn--mbl {
         width: 43px;
         height: 43px;
     }
@@ -271,6 +286,43 @@
         width: 37px;
         height: 37px;
         margin-right: 10px;
+    }
+
+    .header__social-link--insta {
+        background-image: url(../images/insta-header.svg);
+    }
+
+    .header__social-link--vk {
+        background-image: url(../images/vk-header.svg);
+    }
+
+    .header__social-link--wa {
+        background-image: url(../images/whatsapp-header.svg);
+    }
+
+    .header__social-link--insta,
+    .header__social-link--vk,
+    .header__social-link--wa {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .header__social-link--insta:hover {
+        background-image: url(../images/insta-dk.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .header__social-link--vk:hover {
+        background-image: url(../images/vk-dk.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .header__social-link--wa:hover {
+        background-image: url(../images/whatsapp-dk.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .header__name {
