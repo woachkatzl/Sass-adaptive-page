@@ -37,6 +37,21 @@
     background-size: cover;
 }
 
+.footer__link {
+    @include main-txt (0.9375em, 400);
+    line-height: 1.9;
+    color: a.$xtra-light-txt-color;
+    letter-spacing: 0.03em;
+    opacity: 0.5;
+}
+
+.footer__link:hover {
+    opacity: 1;
+    background-image: url(../images/link-hlt.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
 .footer__social-link--insta:hover {
     background-image: url(../images/insta-lt.svg);
     background-repeat: no-repeat;
@@ -79,7 +94,7 @@
     .footer__content {
         position: relative;
         display: grid;
-        grid-template-rows: repeat (10, auto);
+        grid-template-rows: repeat(10, auto);
         justify-items: center;
         align-items: center;
         height: 100%;
@@ -121,11 +136,8 @@
     }
 
     .footer__link {
-        @include main-txt (0.9375em, 400);
-        line-height: 150%;
-        color: a.$xtra-light-txt-color;
-        letter-spacing: 0.03em;
-        opacity: 0.5;
+        width: 110px;
+        text-align: center;
     }
 }
 
@@ -165,6 +177,10 @@
     .footer__btn {
         grid-column-start: content-start;
         grid-column-end: content-end;
+    }
+
+    .footer__link {
+        width: 100%;
     }
 
     .footer__link--rgt {
@@ -208,12 +224,8 @@
         color: a.$xtra-light-txt-color;
     }
 
-    .footer__link {
-        @include main-txt (0.9375em, 400);
-        line-height: 150%;
-        color: a.$xtra-light-txt-color;
-        letter-spacing: 0.03em;
-        opacity: 0.5;
+    .footer__link:hover {
+        background-size: 80%;
     }
 }
 
@@ -302,12 +314,8 @@
         color: a.$xtra-light-txt-color;
     }
 
-    .footer__link {
-        @include main-txt (0.9375em, 400);
-        line-height: 150%;
-        color: a.$xtra-light-txt-color;
-        letter-spacing: 0.03em;
-        opacity: 0.5;
+    .footer__link:hover {
+        background-size: auto 100%;
     }
 }
 
@@ -394,11 +402,7 @@
         color: a.$xtra-light-txt-color;
     }
 
-    .footer__link {
-        @include main-txt (0.9375em, 400);
-        line-height: 150%;
-        color: a.$xtra-light-txt-color;
-        letter-spacing: 0.03em;
-        opacity: 0.5;
+    .footer__link:hover {
+        background-size: auto 100%;
     }
 }

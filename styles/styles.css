@@ -24,7 +24,8 @@ a {
   height: 22px;
 }
 
-.header__tel:hover {
+.header__tel:hover,
+.header__link:hover {
   text-decoration: underline;
 }
 
@@ -169,7 +170,7 @@ a {
     font-family: "Caveat", cursive;
     font-size: 1.625em;
     font-weight: 400;
-    text-align: auto;
+    text-align: start;
     color: #0EB80E;
   }
 }
@@ -248,7 +249,7 @@ a {
     font-family: "Caveat", cursive;
     font-size: 2.25em;
     font-weight: 400;
-    text-align: auto;
+    text-align: start;
     color: #0EB80E;
   }
 }
@@ -367,7 +368,7 @@ a {
     font-family: "Caveat", cursive;
     font-size: 2.5em;
     font-weight: 400;
-    text-align: auto;
+    text-align: start;
     color: #0EB80E;
     line-height: 2.5em;
     letter-spacing: 0.03em;
@@ -474,7 +475,7 @@ a {
     font-family: "Nunito", sans-serif;
     font-size: 1.125em;
     font-weight: 400;
-    text-align: auto;
+    text-align: start;
     color: #818888;
     line-height: 1.5625em;
     letter-spacing: 0.03em;
@@ -485,7 +486,7 @@ a {
     font-family: "Nunito", sans-serif;
     font-size: 0.875em;
     font-weight: 400;
-    text-align: auto;
+    text-align: start;
     color: #818888;
     color: #333333;
     opacity: 0.3;
@@ -586,7 +587,7 @@ a {
     font-family: "Nunito", sans-serif;
     font-size: 1.125em;
     font-weight: 400;
-    text-align: auto;
+    text-align: start;
     color: #818888;
     line-height: 1.5625em;
     letter-spacing: 0.03em;
@@ -595,7 +596,7 @@ a {
     font-family: "Nunito", sans-serif;
     font-size: 0.875em;
     font-weight: 400;
-    text-align: auto;
+    text-align: start;
     color: #818888;
     color: #333333;
     line-height: 1.25em;
@@ -697,7 +698,7 @@ a {
     font-family: "Nunito", sans-serif;
     font-size: 1.125em;
     font-weight: 400;
-    text-align: auto;
+    text-align: start;
     color: #818888;
     line-height: 1.5625em;
     letter-spacing: 0.03em;
@@ -706,7 +707,7 @@ a {
     font-family: "Nunito", sans-serif;
     font-size: 0.875em;
     font-weight: 400;
-    text-align: auto;
+    text-align: start;
     color: #818888;
     color: #333333;
     line-height: 1.25em;
@@ -810,7 +811,7 @@ a {
     font-family: "Nunito", sans-serif;
     font-size: 1.125em;
     font-weight: 400;
-    text-align: auto;
+    text-align: start;
     color: #818888;
     line-height: 1.5625em;
     letter-spacing: 0.03em;
@@ -819,7 +820,7 @@ a {
     font-family: "Nunito", sans-serif;
     font-size: 0.875em;
     font-weight: 400;
-    text-align: auto;
+    text-align: start;
     color: #818888;
     color: #333333;
     line-height: 1.25em;
@@ -1427,6 +1428,23 @@ a {
   background-size: cover;
 }
 
+.footer__link {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.9375em;
+  font-weight: 400;
+  line-height: 1.9;
+  color: #FFFFFF;
+  letter-spacing: 0.03em;
+  opacity: 0.5;
+}
+
+.footer__link:hover {
+  opacity: 1;
+  background-image: url(../images/link-hlt.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
 .footer__social-link--insta:hover {
   background-image: url(../images/insta-lt.svg);
   background-repeat: no-repeat;
@@ -1464,7 +1482,7 @@ a {
   .footer__content {
     position: relative;
     display: grid;
-    grid-template-rows: repeat 10, auto;
+    grid-template-rows: repeat(10, auto);
     justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1514,13 +1532,8 @@ a {
     color: #FFFFFF;
   }
   .footer__link {
-    font-family: "Nunito", sans-serif;
-    font-size: 0.9375em;
-    font-weight: 400;
-    line-height: 150%;
-    color: #FFFFFF;
-    letter-spacing: 0.03em;
-    opacity: 0.5;
+    width: 110px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 721px) and (max-width: 960px) {
@@ -1555,6 +1568,9 @@ a {
   .footer__btn {
     grid-column-start: content-start;
     grid-column-end: content-end;
+  }
+  .footer__link {
+    width: 100%;
   }
   .footer__link--rgt {
     grid-column-start: content-start;
@@ -1603,14 +1619,8 @@ a {
     line-height: 135%;
     color: #FFFFFF;
   }
-  .footer__link {
-    font-family: "Nunito", sans-serif;
-    font-size: 0.9375em;
-    font-weight: 400;
-    line-height: 150%;
-    color: #FFFFFF;
-    letter-spacing: 0.03em;
-    opacity: 0.5;
+  .footer__link:hover {
+    background-size: 80%;
   }
 }
 @media screen and (min-width: 961px) and (max-width: 1919px) {
@@ -1698,14 +1708,8 @@ a {
     line-height: 135%;
     color: #FFFFFF;
   }
-  .footer__link {
-    font-family: "Nunito", sans-serif;
-    font-size: 0.9375em;
-    font-weight: 400;
-    line-height: 150%;
-    color: #FFFFFF;
-    letter-spacing: 0.03em;
-    opacity: 0.5;
+  .footer__link:hover {
+    background-size: auto 100%;
   }
 }
 @media screen and (min-width: 1900px) {
@@ -1792,14 +1796,8 @@ a {
     line-height: 135%;
     color: #FFFFFF;
   }
-  .footer__link {
-    font-family: "Nunito", sans-serif;
-    font-size: 0.9375em;
-    font-weight: 400;
-    line-height: 150%;
-    color: #FFFFFF;
-    letter-spacing: 0.03em;
-    opacity: 0.5;
+  .footer__link:hover {
+    background-size: auto 100%;
   }
 }
 @media screen and (max-width: 720px) {

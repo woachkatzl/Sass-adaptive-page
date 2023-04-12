@@ -71,7 +71,7 @@
     }
 
     .form__issue {
-        @include form-txt (1.125em, auto);
+        @include form-txt (1.125em, start);
         line-height: 1.5625em;
         letter-spacing: 0.03em;
     }
@@ -79,7 +79,7 @@
     .form__consent {
         justify-self: start;
         margin-left: 10px;
-        @include form-txt (0.875em, auto);
+        @include form-txt (0.875em, start);
         color: a.$main-txt-color;
         opacity: 0.3;
     }
@@ -167,13 +167,13 @@
     }
 
     .form__issue {
-        @include form-txt (1.125em, auto);
+        @include form-txt (1.125em, start);
         line-height: 1.5625em;
         letter-spacing: 0.03em;
     }
 
     .form__consent {
-        @include form-txt (0.875em, auto);
+        @include form-txt (0.875em, start);
         color: a.$main-txt-color;
         line-height: 1.25em;
         opacity: 0.3;
@@ -262,13 +262,13 @@
     }
 
     .form__issue {
-        @include form-txt (1.125em, auto);
+        @include form-txt (1.125em, start);
         line-height: 1.5625em;
         letter-spacing: 0.03em;
     }
 
     .form__consent {
-        @include form-txt (0.875em, auto);
+        @include form-txt (0.875em, start);
         color: a.$main-txt-color;
         line-height: 1.25em;
         opacity: 0.3;
@@ -365,13 +365,13 @@
     }
 
     .form__issue {
-        @include form-txt (1.125em, auto);
+        @include form-txt (1.125em, start);
         line-height: 1.5625em;
         letter-spacing: 0.03em;
     }
 
     .form__consent {
-        @include form-txt (0.875em, auto);
+        @include form-txt (0.875em, start);
         color: a.$main-txt-color;
         line-height: 1.25em;
         opacity: 0.3;

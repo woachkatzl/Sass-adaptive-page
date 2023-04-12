@@ -12,7 +12,8 @@
     height: 22px;
 }
 
-.header__tel:hover {
+.header__tel:hover,
+.header__link:hover {
     text-decoration: underline;
 }
 
@@ -147,7 +148,7 @@
     }
 
     .header__name2 {
-        @include cursive (1.625em, auto);
+        @include cursive (1.625em, start);
     }
 }
 
@@ -221,7 +222,7 @@
     }
 
     .header__name2 {
-        @include cursive (2.25em, auto);
+        @include cursive (2.25em, start);
     }
 }
 
@@ -337,7 +338,7 @@
 
     .header__name2 {
         margin: 0;
-        @include cursive (2.5em, auto);
+        @include cursive (2.5em, start);
         line-height: 2.5em;
         letter-spacing: 0.03em;
     }
