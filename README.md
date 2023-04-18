@@ -8,7 +8,6 @@ My primary focus was on learning to use Sass preprocessor for writing my styles.
 My other learning focus was on the use of media queries for ensuring an adaptive and responsive behaviour of the page. I developed it using the "mobile first" principle. Creating this page I also deployed a lot of absolute and relative positioning, as well as used CSS grid and Flexbox techniques.
 
 I used [this Figma template](https://buildhtml.ru/template/342) to develop this page.
-### Table of contents
 ### Installation
 To run and edit this code on your local computer you can take the following steps:
 1. Fork this repository by clicking the "Fork" button (it should be located in the top-right corner of the page)
