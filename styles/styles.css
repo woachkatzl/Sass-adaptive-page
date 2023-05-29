@@ -253,7 +253,7 @@ a {
     color: #0EB80E;
   }
 }
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1901px) {
   .header {
     background-image: url(../images/intro-bg-wide.svg);
     background-repeat: no-repeat;
@@ -717,7 +717,7 @@ a {
     text-decoration: underline;
   }
 }
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1901px) {
   .form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -992,7 +992,7 @@ a {
     opacity: 0.7;
   }
 }
-@media screen and (min-width: 961px) and (max-width: 1919px) {
+@media screen and (min-width: 961px) and (max-width: 1900px) {
   .appt {
     border-radius: 40px;
     background-color: rgba(14, 184, 14, 0.06);
@@ -1071,7 +1071,7 @@ a {
     opacity: 0.7;
   }
 }
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1901px) {
   .appt {
     position: relative;
     padding-bottom: 264px;
@@ -1088,7 +1088,7 @@ a {
   .appt__cta,
   .appt__result {
     position: relative;
-    margin-left: 19vw;
+    margin-left: 19%;
   }
   .appt__cta {
     border: 1px solid rgba(255, 0, 0, 0);
@@ -1289,7 +1289,7 @@ a {
     background-color: #FB974E;
   }
 }
-@media screen and (min-width: 961px) and (max-width: 1919px) {
+@media screen and (min-width: 961px) and (max-width: 1900px) {
   .test {
     height: 180px;
   }
@@ -1341,14 +1341,14 @@ a {
     background-color: #FB974E;
   }
 }
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1901px) {
   .test {
     height: 150px;
   }
   .test__card {
     position: relative;
     top: -270px;
-    left: 22vw;
+    left: 22%;
     width: 460px;
     height: 295px;
     display: grid;
@@ -1623,7 +1623,7 @@ a {
     background-size: 80%;
   }
 }
-@media screen and (min-width: 961px) and (max-width: 1919px) {
+@media screen and (min-width: 961px) and (max-width: 1900px) {
   .footer {
     position: relative;
     height: 442px;
@@ -1712,7 +1712,7 @@ a {
     background-size: auto 100%;
   }
 }
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1901px) {
   .footer {
     position: relative;
   }
@@ -1826,7 +1826,7 @@ a {
     color: #333333;
   }
 }
-@media screen and (min-width: 961px) and (max-width: 1919px) {
+@media screen and (min-width: 961px) and (max-width: 1900px) {
   .copyright {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1846,7 +1846,7 @@ a {
     justify-self: center;
   }
 }
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1901px) {
   .copyright {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

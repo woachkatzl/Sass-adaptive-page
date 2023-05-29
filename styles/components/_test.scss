@@ -104,7 +104,7 @@
 
 
 //Desktop version
-@media screen and (min-width: 961px) and (max-width: 1919px) {
+@media screen and (min-width: 961px) and (max-width: 1900px) {
 
     .test {
         height: 180px;
@@ -153,7 +153,7 @@
 
 
 //Wide-screen version
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1901px) {
 
     .test {
         height: 150px;
@@ -162,7 +162,7 @@
     .test__card {
         position: relative;
         top: -270px;
-        left: 22vw;
+        left: 22%;
         width: 460px;
         height: 295px;
         display: grid;

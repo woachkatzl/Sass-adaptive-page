@@ -178,7 +178,7 @@
 
 
 //Desktop version
-@media screen and (min-width: 961px) and (max-width: 1919px) {
+@media screen and (min-width: 961px) and (max-width: 1900px) {
 
     .appt {
         border-radius: 40px;
@@ -263,7 +263,7 @@
 
 
 //Wide-screen version
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1901px) {
 
     .appt {
         position: relative;
@@ -282,7 +282,7 @@
     .appt__cta,
     .appt__result {
         position: relative;
-        margin-left: 19vw;
+        margin-left: 19%;
     }
 
     .appt__cta {
