@@ -284,7 +284,7 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 31vw;
+    width: 65%;
   }
   .header__tel {
     font-family: "Nunito", sans-serif;
