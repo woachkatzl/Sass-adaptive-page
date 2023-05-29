@@ -37,6 +37,7 @@ To use and navigate the page created in this project follow [this link](https://
 - The social media links in form of icons will change colors when hovered over
 - The links in the footer will become highlighted and circled when hovered over
 - Pressing the "Submit" ("Отправить") button in forms will prompt an e-mail application to open with pre-filled infomration from the form and the destination e-mail address
+- When open on a wide screen the content will be centered on screen with maximum width of content at 1920px and the background color extended to the entire screen 
 ### Credits
 When learning to work with Sass I found the following YouTube tutorials helpful:
 - [Learn Sass In 20 Minutes](https://www.youtube.com/watch?v=Zz6eOVaaelI)
