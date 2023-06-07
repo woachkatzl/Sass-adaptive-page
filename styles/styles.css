@@ -278,13 +278,18 @@ a {
   }
   .header__nav {
     justify-self: center;
+    width: 65%;
+  }
+  .header__nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 65%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
   .header__tel {
     font-family: "Nunito", sans-serif;

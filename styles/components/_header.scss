@@ -256,9 +256,15 @@
 
     .header__nav {
         justify-self: center;
+        width: 65%;
+    }
+
+    .header__nav ul {
         display: flex;
         justify-content: space-between;
-        width: 65%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
     }
 
     .header__tel {
